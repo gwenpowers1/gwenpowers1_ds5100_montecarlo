@@ -8,7 +8,7 @@
 
 ## Synopsis
 ### Install
-pip install /Users/gwenpowers/Desktop/ds5100_montecarlo/dist/ds5100_montecarlo-1.0.0.tar.gz
+pip install /Users/gwenpowers/Desktop/gwenpowers1_ds5100_montecarlo/dist/gwenpowers1_ds5100_montecarlo-1.0.0.tar.gz
 
 #### 1. Create Dice
 
