@@ -14,56 +14,56 @@ pip install /Users/gwenpowers/Desktop/ds5100_montecarlo/dist/ds5100_montecarlo-1
 
 from montecarlo import Die
 
-# Define symbols for the die
+###### Define symbols for the die
 symbols = ['1', '2', '3', '4', '5', '6']
 
-# Create a new die
+######  Create a new die
 die = Die(symbols)
 
-# Change weight of a symbol
+######  Change weight of a symbol
 die.change_weight('1', 2.0)
 
-# Roll the die
+######  Roll the die
 outcomes = die.roll_die(10)
 
-# Get current die data
+######  Get current die data
 current_data_frame = die.current_die()
 
 #### 2. Play a Game
 
 from montecarlo import Die, Game
 
-# Create dice
+######  Create dice
 symbols = ['1', '2', '3', '4', '5', '6']
 die1 = Die(symbols)
 die2 = Die(symbols)
 
-# Create a game with the dice
+######  Create a game with the dice
 game = Game([die1, die2])
 
-# Play the game and get results
+######  Play the game and get results
 game.play(10)
 
-# Get play results in wide format
+######  Get play results in wide format
 play_results_wide = game.play_results('wide')
 
-# Get play results in narrow format
+######  Get play results in narrow format
 play_results_narrow = game.play_results('narrow')
 
 
 #### 3. Analyze a Game
 from montecarlo import Die, Game, Analyzer
 
-# Create dice and a game
+######  Create dice and a game
 symbols = ['1', '2', '3', '4', '5', '6']
 die1 = Die(symbols)
 die2 = Die(symbols)
 game = Game([die1, die2])
 
-# Play the game
+######  Play the game
 game.play(10)
 
-# Analyze game results
+######  Analyze game results
 analyzer = Analyzer(game)
 jackpot_count = analyzer.jackpot()
 face_counts_df = analyzer.face_counts_per_roll('1')
